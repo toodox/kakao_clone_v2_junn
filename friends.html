@@ -16,6 +16,7 @@
 
 
   <body>
+
     <div class="status-bar">
       <!-- .status-bar 하고 엔터 하면 클래스 생성-->
       <div class="status-bar__column">
@@ -33,6 +34,7 @@
         <i class="fas fa-battery-three-quarters"></i>
       </div>
     </div>
+
     <header>
     <div class="header__header-column">
       <h1 class="header__title">Friends</h1>
@@ -47,7 +49,58 @@
       </span>
     </div>
     </header>
-    
+
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend friend--lg">
+          <!-- parent__child parent--newone -->
+          <div class="frined__column">
+            <img src="images/king.png" class="g-avater friend__avater">
+            <div class="friend__content">
+              <span class="frined__name">
+                king
+              </span>
+              <span class="friend__status">
+                I'am a KING!!!
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+     <div class="friends__plus">
+       <h5 class="friends__title">Plusfriend</h5>
+       <div class="frined__column">
+         <div class="friends__friend friend">
+           <img src="images/crown.jpg" class="g-avater friend__avater">
+            <div class="friend__content">
+              <span class="frined__name">
+               Plus Friend
+              </span>
+            </div>
+         </div>
+       </div>
+     </div>
+
+     <ul class="friends__list">
+       <h5 class="friends__title">Friends 14</h5>
+        <li class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/soilder.png" class="g-avater friend__avater">
+            <div class="friend__content">
+              <span class="frined__name">
+                Soilder
+              </span>
+              <span class="friend__status">
+                Fire in the hole!
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              지독하게-FTISLAND (FT JUNN) <i class="fas fa-play"></i>
+            </div>
+          </div>
     <nav class="nav">
       <!--네비게이션 바 태그 nav 생성-->
       <ul class="nav__list">
@@ -60,16 +113,19 @@
            <!--버튼 누르면 friedns.html로 가짐-->
          </a>
        </li>
+
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
            <i class="far fa-comment"></i>
-         </a>
+          </a>
        </li>
-        <li class="nav__list-item">
+
+       <li class="nav__list-item">
           <a href="find.html" class="nav__list-link">
             <i class="class fas fa-search"></i>
           </a>
         </li>
+
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
