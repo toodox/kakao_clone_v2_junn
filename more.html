@@ -14,7 +14,6 @@
     <title>More | Kakao Clone</title>
   </head>
 
-
   <body>
     <div class="status-bar">
       <!-- .status-bar 하고 엔터 하면 클래스 생성-->
@@ -34,22 +33,99 @@
       </div>
     </div>
     <header>
-    <div class="header__header-column">
-      <h1 class="header__title">More</h1>
-    </div>
-    <div class="header__header-column">
-      <span class="header__icon">
-        <i class="class fas fa-search"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-qrcode"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-cog"></i>
-        <!--<i class="fas fa-cog fa-2x"></i> 이렇게 하면 아이콘 크기 변경가능-->
-      </span>
-    </div>
+      <div class="header__header-column">
+        <h1 class="header__title">More</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="class fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-qrcode"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+          <!--<i class="fas fa-cog fa-2x"></i> 이렇게 하면 아이콘 크기 변경가능-->
+        </span>
+      </div>
     </header>
+
+    <main class="more">
+      <header class="more__header">
+        <div class="friends__friend friend friend--lg">
+          <div class="friend__column">
+            <img src="images/king.png" class="g-avater friend__avater">
+            <div class="friend__content">
+              <span class="frined__name">
+                King
+              </span>
+              <span class="friend__status">
+                nsjef90@gmail.com
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <i class="class far fa-comment-alt fa-2x"></i>
+          </div>
+        </div>
+        <ul class="more__btn-list">
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="class far fa-smile fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Emoticons
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="class fas fa-brush fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Themes
+            </span>
+          </li>
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fab fa-kickstarter-k fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Account
+            </span>
+          </li>
+        </ul>
+      </header>
+      <section class="more__suggestions">
+        <h5 class="more__title">Suggestions</h5>
+        <ul class="more__suggestions-list">
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </span>
+            <span class="suggestion__title">
+              Kakao Story
+            </span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-beer fa-2x"></i>
+            </span>
+            <span class="suggestion__title">
+              Kakao friends
+            </span>
+          </li>
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-gamepad fa-2x"></i>
+            </span>
+            <span class="suggestion__title">
+              Friends Gem
+            </span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
     <nav class="nav">
       <!--네비게이션 바 태그 nav 생성-->
       <ul class="nav__list">
@@ -79,7 +155,5 @@
         </li>
       </ul>
     </nav>
-
-
   </body>
 </html>
