@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 *{
     box-sizing: border-box;
@@ -15,6 +16,7 @@ body{
 }
 
 a {
-    color:inherit;
+    color:inherit; /*링크 색상 일반적인 색상으로*/
+    text-decoration: none; /*링크 부분 밑줄 지우기*/
 }
 
