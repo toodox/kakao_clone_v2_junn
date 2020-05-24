@@ -1,5 +1,5 @@
 .chats-body{
-    padding: 0;
+    padding: 10px 0px;
 }
 /*채팅방 배경 적용할때 문제가 되서 기본으로 가지고 있는 padding 지움*/
 .chats-body .header,
@@ -16,17 +16,17 @@
     position: fixed;
     bottom: 50px;
     width: 80%;
-    display: flex;
-    background-color: #fcfcfc;
-    padding: 5px 20px;
-    border-radius: 40px;
     margin: 0 auto;
     left: 0;
     right: 0;
-    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    background-color: #fcfcfc;
+    padding: 0px 20px;
+    border-radius: 40px;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}    
 
 .chat__write i{
     font-size: 22px;
@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0px 20px;
     padding-top: 30px;
 }
@@ -70,16 +71,11 @@
 .message{
     display: flex;
     align-items: flex-start;
-    width: 50%;
     margin-bottom: 20px;
 }
 
-.message .message__content {
-    width: 80%;
-}
-
 .incoming-message {
-    align-self: flex-start; /**/
+    align-self: flex-start;
 }
 
 .sent-message{
@@ -94,14 +90,19 @@
 
 .message .message__bubble {
     background-color: white;
+    display: block;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
     padding: 10px 20px;
     border-radius: 20px;
+    /*말풍선 여러개일 경우 span 때문에 margin-bottom 이 무시된다.
+    이를 해결하기 위해 display:block를 적용해준다.*/
+    color: white;
+    font-weight: 400;
 }
 
 .incoming-message .message__author{
-    margin-top: 10px;
+    margin-top:10px;
     display: block;
     font-weight: 600;
     font-size: 12px;
@@ -109,8 +110,10 @@
 
 .incoming-message .message__bubble{
     border-bottom-left-radius: 0;
+    background-image:linear-gradient(to left, #000046, #1CB5E0);
 }
 
 .sent-message .message__bubble{
     border-bottom-right-radius: 0;
+    background-image: linear-gradient(to right, #021B79, #0575E6);
 }
