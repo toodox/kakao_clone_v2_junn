@@ -35,3 +35,18 @@
     align-items: center;
     border-radius: 15px;
 }
+
+@keyframes showNavbar{
+    from{
+        transform: translateY(80px);
+    }
+    to{
+        transform: none;
+    }
+}
+
+.nav{
+    transform: translateY(80px);
+    animation: showNavbar 0.5s ease-in-out forwards;
+    animation-delay: .1s;
+}
