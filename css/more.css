@@ -34,14 +34,26 @@
 
 .suggestion .suggestion__icon{
     background-color: #fce006;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 10px;
     border-radius: 5px;
+    transition: transform .5s ease-in-out;
+}
+
+.more__btn-icon{
+    transition: transform .5s ease-in-out;
+
+}
+
+.more__btn-icon:hover{
+    transform: translateY(-10px) scale(1.2, 1.2);
+}
+
+.suggestion .suggestion__icon:hover{
+    transform: translateY(-10px) scale(1.2, 1.2);
 }
 
 .suggestion__icon i{
     font-size: 28px;
     color: whitesmoke;
 }
+

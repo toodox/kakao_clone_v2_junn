@@ -9,6 +9,9 @@
     0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
+.chats{
+    border-radius: 6px;
+}
 .chats-body{
     padding: 10px 0px;
     padding-top: 100px;
@@ -16,7 +19,9 @@
 /*채팅방 배경 적용할때 문제가 되서 기본으로 가지고 있는 padding 지움*/
 .chats-body .header,
 .chats-body .status-bar {
-    padding: 0px 20px;
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-right: 4px;
 }
 /*없앤 padding 중 header랑 status-bar은 다시 적용 시킴*/
 .chats-body{
@@ -213,4 +218,8 @@
 
 .sent-message {
     animation: sentAnimation 1s ease-out forwards;
+}
+
+.chats:hover{
+    background-color: rgb(226, 221, 221);
 }

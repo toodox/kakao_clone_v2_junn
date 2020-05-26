@@ -50,3 +50,25 @@
     animation: showNavbar 0.5s ease-in-out forwards;
     animation-delay: .1s;
 }
+
+.nav__list-item{
+    transition: transform .3s ease-in-out;
+}
+
+.nav__list-item:hover{
+    color: steelblue;
+    transform: translateY(-6px) ;
+}
+
+.nav__list-item .nav__badge{
+    animation: floating 1s infinite alternate; 
+}
+
+@keyframes floating{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,-8px);
+    }
+}

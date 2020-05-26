@@ -21,3 +21,13 @@
 .settings .settings__setting:last-child{
     margin-bottom: 0;
 }
+
+.setting__type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings__version{
+    opacity: 0.8;
+}
